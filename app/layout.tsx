@@ -5,8 +5,8 @@ import { LocaleProvider } from './utils/contexts/LocaleContext';
 ;
 
 export const metadata: Metadata = {
-  title: 'website | template',
-  description: 'A Simple frontend Template to start quickly development',
+  title: 'docUP',
+  description: "Un environnement immersif propice pour l'apprentisage d'un medecin",
 };
 
 export default function RootLayout({

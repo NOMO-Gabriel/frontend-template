@@ -1,7 +1,8 @@
 'use client';
 import { useLocale } from '@/app/utils/hooks/useLocale.js';
-import Flag from 'react-world-flags';
 
+import  { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobeEurope,faGlobeAfrica } from '@fortawesome/free-solid-svg-icons';
 const LanguageToggleButton = () => {
     const { locale, changeLocale } = useLocale();
 
@@ -12,9 +13,9 @@ const LanguageToggleButton = () => {
     return (
         <button onClick={handleLanguageChange} className="p-2  rounded font-semibold flex items-center">
             {locale === 'en' ? (
-                <Flag code="FR" style={{ width: '30px', marginRight: '8px' }} />
+                <FontAwesomeIcon icon={faGlobeAfrica} className='text-2xl text-blue-500'/>
             ) : (
-                <Flag code="GB" style={{ width: '30px', marginRight: '8px' }} />
+                <FontAwesomeIcon icon={faGlobeEurope} className='text-2xl text-red-500' />
             )}
             {locale === 'en' ? 'FR' : 'EN'}
         </button>
